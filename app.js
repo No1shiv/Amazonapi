@@ -30,7 +30,6 @@ app.get('/categories' , async (req,res) => {
 
 })
 
-
 // This is for categoryType(QuickSearch)
 app.get('/quickSearch' , async (req,res) => {
     
@@ -40,7 +39,6 @@ app.get('/quickSearch' , async (req,res) => {
     res.send(output)
 
 })
-
 
 
 // This is how we create product routes app.get()
