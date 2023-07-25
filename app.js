@@ -31,6 +31,18 @@ app.get('/categories' , async (req,res) => {
 })
 
 
+// This is for categoryType(QuickSearch)
+app.get('/quickSearch' , async (req,res) => {
+    
+    let query = {}
+    let collection = "categoryType"
+    let output = await getData ( collection , query)   
+    res.send(output)
+
+})
+
+
+
 // This is how we create product routes app.get()
 app.get('/product', async(req,res) => {
 
