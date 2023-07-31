@@ -77,7 +77,7 @@ app.get('/filter/:category_id', async(req,res) => {
     let lprice = Number(req.query.lprice)
     let hprice= Number(req.query.hprice)
 
-    if(productId){
+    if(categoryId){
         query = {
             category_id:categoryId,
              id:productId
