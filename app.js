@@ -74,10 +74,10 @@ app.get('/filter/:category_id', async(req,res) => {
     let categoryId = Number(req.params.category_id);
     let productId = Number(req.query.id)
 
-    let lprice = Number(req.query.price)
-    let hprice= Number(req.query.price)
+    let lprice = Number(req.query.lprice)
+    let hprice= Number(req.query.hprice)
 
-    if(categoryId){
+    if(productId){
         query = {
             category_id:categoryId,
              id:productId
